@@ -1,0 +1,23 @@
+PODS:
+  - InstalogIOS (1.0.0):
+    - PLCrashReporter (= 1.11.2)
+  - PLCrashReporter (1.11.2)
+
+DEPENDENCIES:
+  - InstalogIOS (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - PLCrashReporter
+
+EXTERNAL SOURCES:
+  InstalogIOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InstalogIOS: 0ac7fa8a6446ebfa7afa7b717d098acce43ae3ff
+  PLCrashReporter: 499c53b0104f95c302d94fd723ebb03c56d9bac8
+
+PODFILE CHECKSUM: 1c3754ac2588587508ae02082c7fb6fd8d4a434b
+
+COCOAPODS: 1.16.2
