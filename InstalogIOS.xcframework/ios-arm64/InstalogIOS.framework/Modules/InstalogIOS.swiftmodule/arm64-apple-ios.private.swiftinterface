@@ -18,15 +18,18 @@ import _SwiftConcurrencyShims
 public struct InstalogAlert {
 }
 public class ApiClient {
-  public init()
+  public init(key: Swift.String)
   public enum ApiError : Swift.Error {
     case invalidURL
     case invalidResponse
     case invalidParameters
+    case bundleIdentifierMismatch
+    case error(message: Swift.String)
     case unknown(any Swift.Error)
   }
   public func get(endpoint: Swift.String) async throws -> Swift.String
   public func post(endpoint: Swift.String, jsonString: Swift.String) async throws -> Swift.String
+  public func multipartRequest(endpoint: Swift.String, jsonParameters: [Swift.String : Any], images: [UIKit.UIImage], imageFieldName: Swift.String = "attachments") async throws -> Swift.String
   @objc deinit
 }
 public class FeedbackManager {
@@ -172,19 +175,26 @@ extension Swift.String : Foundation.LocalizedError {
   public static let crash: InstalogIOS.InstaCrash
   public static var userId: Swift.String?
   public static var apiKey: Swift.String?
-  @objc override dynamic public init()
   public func initialize(key: Swift.String)
   public func identifyUser(_ userId: Swift.String)
+  public func getDeviceIdentifier() -> Swift.String
   public func showFeedbackModal()
-  public func sendFeedback(_ feedback: InstalogIOS.FeedbackData) async throws -> Swift.Bool
   public func logEvent(log: InstalogIOS.InstalogLogModel)
+  public func prepareCrashModel(log: InstalogIOS.InstalogLogModel? = nil, feedback: InstalogIOS.InstalogFeedbackModel? = nil, stackTrace: InstalogIOS.InstalogStackTraceModel? = nil) -> InstalogIOS.InstalogCrashModel
   public func runReportWithLogger(_ report: InstalogIOS.InstalogCrashModel)
+  public func sendFeedback(_ feedback: InstalogIOS.FeedbackData) async throws -> Swift.Bool
   public func sendReport(data: InstalogIOS.InstalogCrashModel) async throws -> Swift.Bool
+  public func getUserId() -> Swift.String?
+  @objc override dynamic public init()
   @objc deinit
 }
 public struct InstalogLogger {
 }
 public struct InstalogCrashModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InstalogStackTraceModel : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

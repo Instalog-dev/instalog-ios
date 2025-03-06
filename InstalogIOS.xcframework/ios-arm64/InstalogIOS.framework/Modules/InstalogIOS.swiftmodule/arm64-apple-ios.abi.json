@@ -54,6 +54,13 @@
         "moduleName": "InstalogIOS"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InstalogIOS"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ApiClient",
         "printedName": "ApiClient",
@@ -61,18 +68,24 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init()",
+            "printedName": "init(key:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "ApiClient",
                 "printedName": "InstalogIOS.ApiClient",
                 "usr": "s:11InstalogIOS9ApiClientC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11InstalogIOS9ApiClientCACycfc",
-            "mangledName": "$s11InstalogIOS9ApiClientCACycfc",
+            "usr": "s:11InstalogIOS9ApiClientC3keyACSS_tcfc",
+            "mangledName": "$s11InstalogIOS9ApiClientC3keyACSS_tcfc",
             "moduleName": "InstalogIOS",
             "declAttributes": [
               "AccessControl"
@@ -193,6 +206,100 @@
                 "declKind": "EnumElement",
                 "usr": "s:11InstalogIOS9ApiClientC0C5ErrorO17invalidParametersyA2EmF",
                 "mangledName": "$s11InstalogIOS9ApiClientC0C5ErrorO17invalidParametersyA2EmF",
+                "moduleName": "InstalogIOS"
+              },
+              {
+                "kind": "Var",
+                "name": "bundleIdentifierMismatch",
+                "printedName": "bundleIdentifierMismatch",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InstalogIOS.ApiClient.ApiError.Type) -> InstalogIOS.ApiClient.ApiError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "InstalogIOS.ApiClient.ApiError",
+                        "usr": "s:11InstalogIOS9ApiClientC0C5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "InstalogIOS.ApiClient.ApiError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ApiError",
+                            "printedName": "InstalogIOS.ApiClient.ApiError",
+                            "usr": "s:11InstalogIOS9ApiClientC0C5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11InstalogIOS9ApiClientC0C5ErrorO24bundleIdentifierMismatchyA2EmF",
+                "mangledName": "$s11InstalogIOS9ApiClientC0C5ErrorO24bundleIdentifierMismatchyA2EmF",
+                "moduleName": "InstalogIOS"
+              },
+              {
+                "kind": "Var",
+                "name": "error",
+                "printedName": "error",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InstalogIOS.ApiClient.ApiError.Type) -> (Swift.String) -> InstalogIOS.ApiClient.ApiError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> InstalogIOS.ApiClient.ApiError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ApiError",
+                            "printedName": "InstalogIOS.ApiClient.ApiError",
+                            "usr": "s:11InstalogIOS9ApiClientC0C5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(message: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "InstalogIOS.ApiClient.ApiError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ApiError",
+                            "printedName": "InstalogIOS.ApiClient.ApiError",
+                            "usr": "s:11InstalogIOS9ApiClientC0C5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11InstalogIOS9ApiClientC0C5ErrorO5erroryAESS_tcAEmF",
+                "mangledName": "$s11InstalogIOS9ApiClientC0C5ErrorO5erroryAESS_tcAEmF",
                 "moduleName": "InstalogIOS"
               },
               {
@@ -340,6 +447,75 @@
             "declKind": "Func",
             "usr": "s:11InstalogIOS9ApiClientC4post8endpoint10jsonStringS2S_SStYaKF",
             "mangledName": "$s11InstalogIOS9ApiClientC4post8endpoint10jsonStringS2S_SStYaKF",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "multipartRequest",
+            "printedName": "multipartRequest(endpoint:jsonParameters:images:imageFieldName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIImage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11InstalogIOS9ApiClientC16multipartRequest8endpoint14jsonParameters6images14imageFieldNameS2S_SDySSypGSaySo7UIImageCGSStYaKF",
+            "mangledName": "$s11InstalogIOS9ApiClientC16multipartRequest8endpoint14jsonParameters6images14imageFieldNameS2S_SDySSypGSaySo7UIImageCGSStYaKF",
             "moduleName": "InstalogIOS",
             "declAttributes": [
               "AccessControl",
@@ -513,6 +689,13 @@
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "InstalogIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "PhotosUI",
+        "printedName": "PhotosUI",
         "declKind": "Import",
         "moduleName": "InstalogIOS"
       },
@@ -3332,32 +3515,6 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Instalog",
-                "printedName": "InstalogIOS.Instalog",
-                "usr": "c:@M@InstalogIOS@objc(cs)Instalog"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@InstalogIOS@objc(cs)Instalog(im)init",
-            "mangledName": "$s11InstalogIOS0A0CACycfc",
-            "moduleName": "InstalogIOS",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(key:)",
@@ -3411,6 +3568,27 @@
           },
           {
             "kind": "Function",
+            "name": "getDeviceIdentifier",
+            "printedName": "getDeviceIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11InstalogIOS0A0C19getDeviceIdentifierSSyF",
+            "mangledName": "$s11InstalogIOS0A0C19getDeviceIdentifierSSyF",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "showFeedbackModal",
             "printedName": "showFeedbackModal()",
             "children": [
@@ -3423,6 +3601,124 @@
             "declKind": "Func",
             "usr": "s:11InstalogIOS0A0C17showFeedbackModalyyF",
             "mangledName": "$s11InstalogIOS0A0C17showFeedbackModalyyF",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logEvent",
+            "printedName": "logEvent(log:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InstalogLogModel",
+                "printedName": "InstalogIOS.InstalogLogModel",
+                "usr": "s:11InstalogIOS0A8LogModelV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11InstalogIOS0A0C8logEvent0C0yAA0A8LogModelV_tF",
+            "mangledName": "$s11InstalogIOS0A0C8logEvent0C0yAA0A8LogModelV_tF",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareCrashModel",
+            "printedName": "prepareCrashModel(log:feedback:stackTrace:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstalogCrashModel",
+                "printedName": "InstalogIOS.InstalogCrashModel",
+                "usr": "s:11InstalogIOS0A10CrashModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InstalogIOS.InstalogLogModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstalogLogModel",
+                    "printedName": "InstalogIOS.InstalogLogModel",
+                    "usr": "s:11InstalogIOS0A8LogModelV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InstalogIOS.InstalogFeedbackModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstalogFeedbackModel",
+                    "printedName": "InstalogIOS.InstalogFeedbackModel",
+                    "usr": "s:11InstalogIOS0A13FeedbackModelV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InstalogIOS.InstalogStackTraceModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstalogStackTraceModel",
+                    "printedName": "InstalogIOS.InstalogStackTraceModel",
+                    "usr": "s:11InstalogIOS0A15StackTraceModelV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11InstalogIOS0A0C17prepareCrashModel3log8feedback10stackTraceAA0adE0VAA0a3LogE0VSg_AA0a8FeedbackE0VSgAA0a5StackiE0VSgtF",
+            "mangledName": "$s11InstalogIOS0A0C17prepareCrashModel3log8feedback10stackTraceAA0adE0VAA0a3LogE0VSg_AA0a8FeedbackE0VSgAA0a5StackiE0VSgtF",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "runReportWithLogger",
+            "printedName": "runReportWithLogger(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InstalogCrashModel",
+                "printedName": "InstalogIOS.InstalogCrashModel",
+                "usr": "s:11InstalogIOS0A10CrashModelV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11InstalogIOS0A0C19runReportWithLoggeryyAA0A10CrashModelVF",
+            "mangledName": "$s11InstalogIOS0A0C19runReportWithLoggeryyAA0A10CrashModelVF",
             "moduleName": "InstalogIOS",
             "declAttributes": [
               "AccessControl"
@@ -3459,58 +3755,6 @@
           },
           {
             "kind": "Function",
-            "name": "logEvent",
-            "printedName": "logEvent(log:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InstalogLogModel",
-                "printedName": "InstalogIOS.InstalogLogModel",
-                "usr": "s:11InstalogIOS0A8LogModelV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11InstalogIOS0A0C8logEvent0C0yAA0A8LogModelV_tF",
-            "mangledName": "$s11InstalogIOS0A0C8logEvent0C0yAA0A8LogModelV_tF",
-            "moduleName": "InstalogIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "runReportWithLogger",
-            "printedName": "runReportWithLogger(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InstalogCrashModel",
-                "printedName": "InstalogIOS.InstalogCrashModel",
-                "usr": "s:11InstalogIOS0A10CrashModelV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11InstalogIOS0A0C19runReportWithLoggeryyAA0A10CrashModelVF",
-            "mangledName": "$s11InstalogIOS0A0C19runReportWithLoggeryyAA0A10CrashModelVF",
-            "moduleName": "InstalogIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "sendReport",
             "printedName": "sendReport(data:)",
             "children": [
@@ -3536,6 +3780,61 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserId",
+            "printedName": "getUserId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11InstalogIOS0A0C9getUserIdSSSgyF",
+            "mangledName": "$s11InstalogIOS0A0C9getUserIdSSSgyF",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Instalog",
+                "printedName": "InstalogIOS.Instalog",
+                "usr": "c:@M@InstalogIOS@objc(cs)Instalog"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@InstalogIOS@objc(cs)Instalog(im)init",
+            "mangledName": "$s11InstalogIOS0A0CACycfc",
+            "moduleName": "InstalogIOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -3722,6 +4021,101 @@
         "declKind": "Struct",
         "usr": "s:11InstalogIOS0A10CrashModelV",
         "mangledName": "$s11InstalogIOS0A10CrashModelV",
+        "moduleName": "InstalogIOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstalogStackTraceModel",
+        "printedName": "InstalogStackTraceModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstalogStackTraceModel",
+                "printedName": "InstalogIOS.InstalogStackTraceModel",
+                "usr": "s:11InstalogIOS0A15StackTraceModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11InstalogIOS0A15StackTraceModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11InstalogIOS0A15StackTraceModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InstalogIOS",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11InstalogIOS0A15StackTraceModelV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11InstalogIOS0A15StackTraceModelV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InstalogIOS",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11InstalogIOS0A15StackTraceModelV",
+        "mangledName": "$s11InstalogIOS0A15StackTraceModelV",
         "moduleName": "InstalogIOS",
         "declAttributes": [
           "AccessControl"
@@ -5635,56 +6029,77 @@
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/utils\/ApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 75,
-      "length": 28,
-      "value": "\"https:\/\/catfact.ninja\/fact\""
+      "offset": 88,
+      "length": 31,
+      "value": "\"https:\/\/api.instalog.dev\/api\/\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/utils\/ApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 148,
+      "offset": 145,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/utils\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 3160,
+      "length": 13,
+      "value": "\"attachments\""
+    },
+    {
+      "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
+      "kind": "StringLiteral",
+      "offset": 172,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
       "kind": "StringLiteral",
-      "offset": 156,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
-      "kind": "StringLiteral",
-      "offset": 187,
+      "offset": 203,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
       "kind": "Array",
-      "offset": 232,
+      "offset": 248,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 276,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 637,
+      "offset": 680,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 728,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
       "kind": "IntegerLiteral",
-      "offset": 751,
+      "offset": 842,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/feedback\/FeedbackModalEntryView.swift",
       "kind": "StringLiteral",
-      "offset": 2306,
+      "offset": 3757,
       "length": 7,
       "value": "\"close\""
     },
@@ -5838,70 +6253,77 @@
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 371,
+      "offset": 412,
+      "length": 19,
+      "value": "\"bundle_identifier\""
+    },
+    {
+      "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
+      "kind": "StringLiteral",
+      "offset": 458,
       "length": 13,
       "value": "\"device_uuid\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 411,
+      "offset": 498,
       "length": 13,
       "value": "\"stack_trace\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 451,
-      "length": 13,
-      "value": "\"bundle_name\""
+      "offset": 540,
+      "length": 16,
+      "value": "\"unique_user_id\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 1529,
+      "offset": 1622,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 1575,
-      "length": 18,
-      "value": "\"bundle_dentifier\""
+      "offset": 1662,
+      "length": 13,
+      "value": "\"bundle_name\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 1623,
+      "offset": 1705,
       "length": 16,
       "value": "\"bundle_version\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 1666,
+      "offset": 1748,
       "length": 13,
       "value": "\"system_name\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 1708,
+      "offset": 1790,
       "length": 15,
       "value": "\"battery_state\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 1752,
+      "offset": 1834,
       "length": 15,
       "value": "\"battery_level\""
     },
     {
       "filePath": "\/Users\/chiziaruhoma\/projects\/work-projects\/instalog\/ios\/InstalogIOS\/Classes\/models\/InstalogModels.swift",
       "kind": "StringLiteral",
-      "offset": 1792,
+      "offset": 1874,
       "length": 11,
       "value": "\"free_disk\""
     },
