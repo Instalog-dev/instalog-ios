@@ -11,6 +11,8 @@ InstalogIOS is a powerful SDK for iOS applications that provides crash reporting
 - [InstalogIOS](#instalogios)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
+    - [CocoaPods](#cocoapods)
+    - [Swift Package Manager](#swift-package-manager)
   - [Getting Started](#getting-started)
     - [Initialize the SDK](#initialize-the-sdk)
     - [Basic Usage](#basic-usage)
@@ -24,11 +26,30 @@ InstalogIOS is a powerful SDK for iOS applications that provides crash reporting
 
 ## Installation
 
+### CocoaPods
+
 InstalogIOS is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your Podfile:
 
 ```ruby
 pod 'InstalogIOS'
 ```
+
+### Swift Package Manager
+
+InstalogIOS is also available through [Swift Package Manager](https://swift.org/package-manager/). To install it, add the following to your `Package.swift` file:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/instalog-dev/instalog-ios.git", .exact("1.0.0"))
+]
+```
+
+Or in Xcode:
+
+1. File > Add Packages...
+2. Enter package URL: `https://github.com/instalog-dev/instalog-ios.git`
+3. Select "Exact Version" and enter "1.0.0"
+4. Click "Add Package"
 
 ## Getting Started
 
