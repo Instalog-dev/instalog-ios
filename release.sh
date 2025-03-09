@@ -1,9 +1,37 @@
 #!/bin/bash
 
-# Check if version argument is provided
+# Function to unpublish a version
+unpublish_version() {
+    local version=$1
+    echo "Unpublishing version $version..."
+    
+    # Delete from CocoaPods trunk
+    pod trunk delete InstalogIOS $version
+    
+    # Delete local and remote git tags
+    git tag -d $version
+    git push origin :refs/tags/$version
+    
+    echo "Successfully unpublished version $version"
+}
+
+# Check if unpublish flag is provided
+if [ "$1" == "--unpublish" ]; then
+    if [ "$#" -ne 2 ]; then
+        echo "Usage for unpublish: $0 --unpublish <version>"
+        echo "Example: $0 --unpublish 1.0.0"
+        exit 1
+    fi
+    unpublish_version $2
+    exit 0
+fi
+
+# Regular release process
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <new_version>"
+    echo "Usage for release: $0 <new_version>"
+    echo "Usage for unpublish: $0 --unpublish <version>"
     echo "Example: $0 1.0.1"
+    echo "Example: $0 --unpublish 1.0.0"
     exit 1
 fi
 
