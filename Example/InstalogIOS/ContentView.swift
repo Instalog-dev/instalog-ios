@@ -56,7 +56,7 @@ struct ContentView: View {
                     // Your action for send event
                     let log = InstalogLogModel(
                         event: "Testing from Instalog SDK",
-                        params: ["name": "anarchist"]
+                        params: ["name": "mike"]
                     )
                     
                     Instalog.shared.logEvent(log: log)
