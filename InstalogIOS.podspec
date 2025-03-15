@@ -31,7 +31,7 @@ The Instalog iOS SDK provides comprehensive tools for iOS applications including
   s.ios.deployment_target = '14.0'
   s.swift_version = '5.0'
 
-  s.source_files = 'InstalogIOS/Classes/**/*'
+  #s.source_files = 'InstalogIOS/Classes/**/*'
   s.preserve_paths   = 'InstalogIOS.xcframework', 'dSYM'
   s.vendored_frameworks = 'InstalogIOS.xcframework'
   s.static_framework = true
