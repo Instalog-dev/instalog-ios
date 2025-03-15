@@ -1,5 +1,5 @@
 PODS:
-  - InstalogIOS (1.0.0):
+  - InstalogIOS (1.0.1):
     - PLCrashReporter (= 1.11.2)
   - PLCrashReporter (1.11.2)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  InstalogIOS: 64fd96825aca305fa4f604c5e5d8939001d769c2
+  InstalogIOS: 2b441131960bed79d41c3f98c132283aaf8186f3
   PLCrashReporter: 499c53b0104f95c302d94fd723ebb03c56d9bac8
 
 PODFILE CHECKSUM: 1c3754ac2588587508ae02082c7fb6fd8d4a434b

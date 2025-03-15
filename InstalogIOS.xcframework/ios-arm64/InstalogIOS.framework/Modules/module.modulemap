@@ -1,0 +1,11 @@
+framework module InstalogIOS {
+  umbrella header "InstalogIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module InstalogIOS.Swift {
+  header "InstalogIOS-Swift.h"
+  requires objc
+}
