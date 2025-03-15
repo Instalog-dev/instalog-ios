@@ -175,6 +175,7 @@ public struct InstalogOptions {
   public var isFeedbackEnabled: Swift.Bool
   public var isLogEnabled: Swift.Bool
   public var isLoggerEnabled: Swift.Bool
+  public init(dictionary: [Swift.String : Any]?)
 }
 @objc @_inheritsConvenienceInitializers public class Instalog : ObjectiveC.NSObject {
   public static let shared: InstalogIOS.Instalog

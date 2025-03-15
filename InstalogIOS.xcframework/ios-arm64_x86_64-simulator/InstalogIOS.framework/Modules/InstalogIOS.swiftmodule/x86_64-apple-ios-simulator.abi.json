@@ -11639,6 +11639,9 @@
             "usr": "s:11InstalogIOS0A7OptionsV10dictionaryACSDySSypGSg_tcfc",
             "mangledName": "$s11InstalogIOS0A7OptionsV10dictionaryACSDySSypGSg_tcfc",
             "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "init_kind": "Designated"
           }
         ],
