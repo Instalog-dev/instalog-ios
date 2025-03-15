@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InstalogIOS'
-  s.version          = '1.0.1'
+  s.version          = '0.0.1'
   s.summary          = 'Powerful iOS SDK for crash reporting, event logging, and user feedback collection'
 
 # This description is used to generate tags and improve search results.

@@ -74,7 +74,7 @@ fi
 
 # Pod trunk push
 echo "Publishing to CocoaPods..."
-pod trunk push "$PODSPEC_FILE" --allow-warnings
+pod trunk push "$PODSPEC_FILE" --allow-warnings --verbose
 
 if [ $? -ne 0 ]; then
     echo "Error: Pod trunk push failed"

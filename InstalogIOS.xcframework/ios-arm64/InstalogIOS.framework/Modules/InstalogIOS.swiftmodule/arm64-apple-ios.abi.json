@@ -3163,6 +3163,348 @@
         "kind": "TypeDecl",
         "name": "InstalogOptions",
         "printedName": "InstalogOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isCrashEnabled",
+            "printedName": "isCrashEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11InstalogIOS0A7OptionsV14isCrashEnabledSbvp",
+            "mangledName": "$s11InstalogIOS0A7OptionsV14isCrashEnabledSbvp",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV14isCrashEnabledSbvg",
+                "mangledName": "$s11InstalogIOS0A7OptionsV14isCrashEnabledSbvg",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV14isCrashEnabledSbvs",
+                "mangledName": "$s11InstalogIOS0A7OptionsV14isCrashEnabledSbvs",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV14isCrashEnabledSbvM",
+                "mangledName": "$s11InstalogIOS0A7OptionsV14isCrashEnabledSbvM",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isFeedbackEnabled",
+            "printedName": "isFeedbackEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvp",
+            "mangledName": "$s11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvp",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvg",
+                "mangledName": "$s11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvg",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvs",
+                "mangledName": "$s11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvs",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvM",
+                "mangledName": "$s11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvM",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLogEnabled",
+            "printedName": "isLogEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11InstalogIOS0A7OptionsV12isLogEnabledSbvp",
+            "mangledName": "$s11InstalogIOS0A7OptionsV12isLogEnabledSbvp",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV12isLogEnabledSbvg",
+                "mangledName": "$s11InstalogIOS0A7OptionsV12isLogEnabledSbvg",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV12isLogEnabledSbvs",
+                "mangledName": "$s11InstalogIOS0A7OptionsV12isLogEnabledSbvs",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV12isLogEnabledSbvM",
+                "mangledName": "$s11InstalogIOS0A7OptionsV12isLogEnabledSbvM",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLoggerEnabled",
+            "printedName": "isLoggerEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11InstalogIOS0A7OptionsV15isLoggerEnabledSbvp",
+            "mangledName": "$s11InstalogIOS0A7OptionsV15isLoggerEnabledSbvp",
+            "moduleName": "InstalogIOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV15isLoggerEnabledSbvg",
+                "mangledName": "$s11InstalogIOS0A7OptionsV15isLoggerEnabledSbvg",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV15isLoggerEnabledSbvs",
+                "mangledName": "$s11InstalogIOS0A7OptionsV15isLoggerEnabledSbvs",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11InstalogIOS0A7OptionsV15isLoggerEnabledSbvM",
+                "mangledName": "$s11InstalogIOS0A7OptionsV15isLoggerEnabledSbvM",
+                "moduleName": "InstalogIOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:11InstalogIOS0A7OptionsV",
         "mangledName": "$s11InstalogIOS0A7OptionsV",

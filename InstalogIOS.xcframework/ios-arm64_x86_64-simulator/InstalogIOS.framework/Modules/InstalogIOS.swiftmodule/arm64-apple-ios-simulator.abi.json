@@ -11273,7 +11273,8 @@
             "mangledName": "$s11InstalogIOS0A7OptionsV14isCrashEnabledSbvp",
             "moduleName": "InstalogIOS",
             "declAttributes": [
-              "HasStorage"
+              "HasStorage",
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -11357,7 +11358,8 @@
             "mangledName": "$s11InstalogIOS0A7OptionsV17isFeedbackEnabledSbvp",
             "moduleName": "InstalogIOS",
             "declAttributes": [
-              "HasStorage"
+              "HasStorage",
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -11441,7 +11443,8 @@
             "mangledName": "$s11InstalogIOS0A7OptionsV12isLogEnabledSbvp",
             "moduleName": "InstalogIOS",
             "declAttributes": [
-              "HasStorage"
+              "HasStorage",
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -11525,7 +11528,8 @@
             "mangledName": "$s11InstalogIOS0A7OptionsV15isLoggerEnabledSbvp",
             "moduleName": "InstalogIOS",
             "declAttributes": [
-              "HasStorage"
+              "HasStorage",
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [

@@ -171,6 +171,10 @@ extension Swift.String : Foundation.LocalizedError {
   @objc deinit
 }
 public struct InstalogOptions {
+  public var isCrashEnabled: Swift.Bool
+  public var isFeedbackEnabled: Swift.Bool
+  public var isLogEnabled: Swift.Bool
+  public var isLoggerEnabled: Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers public class Instalog : ObjectiveC.NSObject {
   public static let shared: InstalogIOS.Instalog
