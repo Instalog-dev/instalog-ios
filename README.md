@@ -1,6 +1,4 @@
 # InstalogIOS
-
-[![CI Status](https://img.shields.io/travis/25801929/InstalogIOS.svg?style=flat)](https://travis-ci.org/25801929/InstalogIOS)
 [![Version](https://img.shields.io/cocoapods/v/InstalogIOS.svg?style=flat)](https://cocoapods.org/pods/InstalogIOS)
 [![License](https://img.shields.io/cocoapods/l/InstalogIOS.svg?style=flat)](https://cocoapods.org/pods/InstalogIOS)
 [![Platform](https://img.shields.io/cocoapods/p/InstalogIOS.svg?style=flat)](https://cocoapods.org/pods/InstalogIOS)
@@ -40,7 +38,7 @@ InstalogIOS is also available through [Swift Package Manager](https://swift.org/
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/instalog-dev/instalog-ios.git", .exact("1.0.0"))
+    .package(url: "https://github.com/instalog-dev/instalog-ios.git", .exact("1.0.1"))
 ]
 ```
 
@@ -48,7 +46,7 @@ Or in Xcode:
 
 1. File > Add Packages...
 2. Enter package URL: `https://github.com/instalog-dev/instalog-ios.git`
-3. Select "Exact Version" and enter "1.0.0"
+3. Select "Exact Version" and enter "1.0.1"
 4. Click "Add Package"
 
 ## Getting Started
