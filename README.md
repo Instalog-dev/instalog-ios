@@ -13,12 +13,16 @@ InstalogIOS is a powerful SDK for iOS applications that provides crash reporting
     - [Swift Package Manager](#swift-package-manager)
   - [Getting Started](#getting-started)
     - [Initialize the SDK](#initialize-the-sdk)
+    - [Feature Configuration](#feature-configuration)
     - [Basic Usage](#basic-usage)
   - [Features](#features)
     - [Crash Reporting](#crash-reporting)
     - [Event Logging](#event-logging)
     - [User Feedback](#user-feedback)
+    - [Configurable Components](#configurable-components)
   - [Example](#example)
+    - [Initialization Example](#initialization-example)
+    - [Logging Example](#logging-example)
   - [Author](#author)
   - [License](#license)
 
@@ -59,10 +63,35 @@ import InstalogIOS
 // In AppDelegate
 func application(_ application: UIApplication, 
                  didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    // Basic initialization
     Instalog.shared.initialize(key: "your-api-key")
+    
+    // Or initialize with specific features enabled/disabled
+    let options = InstalogOptions(dictionary: [
+        "isCrashEnabled": true,      // Enable/disable crash reporting
+        "isFeedbackEnabled": true,   // Enable/disable feedback functionality
+        "isLogEnabled": true,        // Enable/disable event logging
+        "isLoggerEnabled": false     // Enable/disable debug logging
+    ])
+    
+    Instalog.shared.initialize(key: "your-api-key", options: options)
+    
     return true
 }
 ```
+
+### Feature Configuration
+
+InstalogIOS allows you to configure which features are enabled or disabled:
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `isCrashEnabled` | `true` | Controls crash reporting functionality |
+| `isFeedbackEnabled` | `true` | Controls in-app feedback functionality |
+| `isLogEnabled` | `true` | Controls event logging functionality |
+| `isLoggerEnabled` | `false` | Controls internal debug logging |
+
+You can configure these options when initializing the SDK, or use the default configuration.
 
 ### Basic Usage
 
@@ -72,8 +101,8 @@ Instalog.shared.identifyUser("user123")
 
 // Log an event
 let log = InstalogLogModel(
-    level: .info,
-    message: "User completed onboarding"
+    event: "onboarding_completed",
+    params: ["screen": "welcome", "user_type": "new"]
 )
 Instalog.shared.logEvent(log: log)
 
@@ -87,16 +116,24 @@ Instalog.shared.showFeedbackModal()
 - Automatic crash detection
 - Manual crash reporting
 - Crash simulation for testing
+- Can be enabled/disabled through configuration
 
 ### Event Logging
 - Multiple log levels (debug, info, warning, error)
 - Custom metadata support
 - Automatic device information collection
+- Can be enabled/disabled through configuration
 
 ### User Feedback
 - In-app feedback modal
 - Screenshot attachment (up to 4 images)
 - Programmatic feedback submission
+- Can be enabled/disabled through configuration
+
+### Configurable Components
+- Selectively enable or disable features based on your needs
+- Control internal logging verbosity
+- All configurations can be set at initialization
 
 ## Example
 
@@ -107,10 +144,52 @@ To run the example project:
 3. Open the workspace in Xcode
 
 The example project demonstrates:
-- SDK initialization
-- Event logging
-- Crash reporting
+- SDK initialization with feature configuration
+- Event logging with different log levels
+- Crash reporting and simulation
 - User feedback collection
+
+### Initialization Example
+
+```swift
+// Initialize with all default settings
+Instalog.shared.initialize(key: "your-api-key")
+
+// Initialize with custom configuration
+let options = InstalogOptions(dictionary: [
+    "isCrashEnabled": true,      
+    "isFeedbackEnabled": true,   
+    "isLogEnabled": true,        
+    "isLoggerEnabled": true      // Enable internal logging for debugging
+])
+Instalog.shared.initialize(key: "your-api-key", options: options)
+
+// Set a user identifier
+Instalog.shared.identifyUser("user_123")
+```
+
+### Logging Example
+
+```swift
+// Simple event log
+let simpleLog = InstalogLogModel(
+    event: "product_viewed",
+    params: ["product_id": "12345", "category": "electronics"]
+)
+Instalog.shared.logEvent(log: simpleLog)
+
+// Detailed event log
+let detailedLog = InstalogLogModel(
+    event: "payment_failed",
+    params: [
+      "transaction_id": "tx_789", 
+      "error_code": "payment_declined", 
+      "amount": "99.99", 
+      "currency": "USD"
+    ]
+)
+Instalog.shared.logEvent(log: detailedLog)
+```
 
 ## Author
 
